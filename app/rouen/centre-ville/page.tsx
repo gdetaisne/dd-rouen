@@ -50,5 +50,5 @@ const rouenCentrevilleData = {
 };
 
 export default function RouenCentrevillePage() {
-  return <LocalPage data={rouenCentrevilleData} />;
+  return <LocalPage {...rouenCentrevilleData} />;
 }

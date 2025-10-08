@@ -50,5 +50,5 @@ const rouenSaintSeverData = {
 };
 
 export default function RouenSaintSeverPage() {
-  return <LocalPage data={rouenSaintSeverData} />;
+  return <LocalPage {...rouenSaintSeverData} />;
 }

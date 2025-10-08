@@ -50,5 +50,5 @@ const rouenSaintMarcData = {
 };
 
 export default function RouenSaintMarcPage() {
-  return <LocalPage data={rouenSaintMarcData} />;
+  return <LocalPage {...rouenSaintMarcData} />;
 }

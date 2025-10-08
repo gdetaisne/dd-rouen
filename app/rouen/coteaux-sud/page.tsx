@@ -50,5 +50,5 @@ const rouenCoteauxSudData = {
 };
 
 export default function RouenCoteauxSudPage() {
-  return <LocalPage data={rouenCoteauxSudData} />;
+  return <LocalPage {...rouenCoteauxSudData} />;
 }

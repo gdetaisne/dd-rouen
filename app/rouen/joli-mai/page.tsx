@@ -50,5 +50,5 @@ const rouenJoliMaiData = {
 };
 
 export default function RouenJoliMaiPage() {
-  return <LocalPage data={rouenJoliMaiData} />;
+  return <LocalPage {...rouenJoliMaiData} />;
 }
