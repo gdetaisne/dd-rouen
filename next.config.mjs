@@ -46,6 +46,10 @@ const nextConfig = {
   // Redirections 404 - URLs sans -rouen vers avec -rouen
   async redirects() {
     const existing = [
+      // VAGUE 1 – Migration homepage domaine → page ville moverz.fr
+      { source: '/', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
+
+      // Redirections historiques
       // SATELLITES : Articles sans -rouen → avec -rouen
       { source: '/blog/satellites/self-stockage-acces-24-7', destination: '/blog/satellites/self-stockage-acces-24-7-rouen', permanent: true },
       { source: '/blog/satellites/autorisation-stationnement-demenagement-mairie', destination: '/blog/satellites/autorisation-stationnement-demenagement-rouen-mairie', permanent: true },
