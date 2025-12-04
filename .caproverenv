@@ -1,0 +1,3 @@
+SITE_URL=https://devis-demenageur-rouen.fr/
+NODE_ENV=production
+NEXT_TELEMETRY_DISABLED=1
