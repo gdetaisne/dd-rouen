@@ -49,6 +49,12 @@ const nextConfig = {
       // VAGUE 1 – Migration homepage domaine → page ville moverz.fr
       { source: '/', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
 
+      // MIGRATION BLOG → moverz.fr
+      { source: '/blog', destination: 'https://moverz.fr/blog/', permanent: true },
+      { source: '/blog/', destination: 'https://moverz.fr/blog/', permanent: true },
+      // Nouvelle structure /blog/demenagement-rouen/{slug} → moverz.fr/blog/{slug}
+      { source: '/blog/demenagement-rouen/:slug*', destination: 'https://moverz.fr/blog/:slug*', permanent: true },
+
       // Redirections historiques
       // SATELLITES : Articles sans -rouen → avec -rouen
       { source: '/blog/satellites/self-stockage-acces-24-7', destination: '/blog/satellites/self-stockage-acces-24-7-rouen', permanent: true },
