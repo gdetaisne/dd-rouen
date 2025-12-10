@@ -1,4 +1,4 @@
-import { getMoverzBlogRedirectsForHost } from './scripts/blog-moverz-redirects.mjs';
+import { getMoverzBlogRedirectsForHost } from '../../scripts/blog-moverz-redirects.mjs';
 
 const HOST = 'devis-demenageur-rouen.fr';
 
@@ -39,8 +39,12 @@ const nextConfig = {
   async redirects() {
     const existing = [
       // Homepage → Page ville moverz.fr
+      { source: '/', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
       // Blog hub → moverz.fr
+      { source: '/blog', destination: 'https://moverz.fr/blog/', permanent: true },
+      { source: '/blog/', destination: 'https://moverz.fr/blog/', permanent: true },
       // Blog articles → moverz.fr
+      { source: '/blog/demenagement-rouen/:slug*', destination: 'https://moverz.fr/blog/:slug*', permanent: true },
       // Quartiers rouen (6 pages)
       { source: '/rouen/', destination: 'https://moverz.fr/rouen/', permanent: true },
       { source: '/rouen/centre-ville/', destination: 'https://moverz.fr/rouen/centre-ville/', permanent: true },
@@ -49,6 +53,7 @@ const nextConfig = {
       { source: '/rouen/saint-marc/', destination: 'https://moverz.fr/rouen/saint-marc/', permanent: true },
       { source: '/rouen/saint-sever/', destination: 'https://moverz.fr/rouen/saint-sever/', permanent: true },
       // Hub quartiers rouen
+      { source: '/quartiers-rouen/', destination: 'https://moverz.fr/quartiers-rouen/', permanent: true },
       // Corridors depuis rouen (6 pages)
       { source: '/rouen-vers-espagne/', destination: 'https://moverz.fr/rouen-vers-espagne/', permanent: true },
       { source: '/rouen-vers-lyon/', destination: 'https://moverz.fr/rouen-vers-lyon/', permanent: true },
