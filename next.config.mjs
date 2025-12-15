@@ -45,6 +45,12 @@ const nextConfig = {
       { source: '/blog/', destination: 'https://moverz.fr/blog/', permanent: true },
       // Blog articles → moverz.fr
       { source: '/blog/demenagement-rouen/:slug*', destination: 'https://moverz.fr/blog/:slug*', permanent: true },
+      // Liens internes ville (self-référence) → moverz.fr
+      { source: '/demenagement/rouen', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
+      { source: '/quartiers-rouen', destination: 'https://moverz.fr/quartiers-rouen/', permanent: true },
+      // Liens partenaires/devis → moverz.fr
+      { source: '/partenaires', destination: 'https://moverz.fr/partenaires/', permanent: true },
+      { source: '/devis-gratuits', destination: 'https://moverz.fr/devis-gratuits/', permanent: true },
       // Catch-all blog articles (any slug) → moverz.fr
       { source: '/blog/:slug*', destination: 'https://moverz.fr/blog/:slug*', permanent: true },
       // Quartiers cross-ville → moverz.fr
