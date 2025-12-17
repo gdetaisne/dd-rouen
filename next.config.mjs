@@ -152,24 +152,24 @@ const nextConfig = {
       { source: '/montpellier/:quartier', destination: 'https://moverz.fr/montpellier/:quartier/', permanent: true },
       // Liens internes ville (self-référence) → moverz.fr
       { source: '/demenagement/rouen', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
-      { source: '/quartiers-rouen', destination: 'https://moverz.fr/quartiers-rouen/', permanent: true },
+      { source: '/quartiers-rouen', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
       // Liens partenaires/devis → moverz.fr
       { source: '/partenaires', destination: 'https://moverz.fr/partenaires/', permanent: true },
       { source: '/devis-gratuits', destination: 'https://moverz.fr/devis-gratuits/', permanent: true },
       // Catch-all blog articles (any slug) → moverz.fr
       { source: '/blog/:slug*', destination: 'https://moverz.fr/blog/:slug*', permanent: true },
       // Quartiers cross-ville → moverz.fr
-      { source: '/quartiers-nice', destination: 'https://moverz.fr/quartiers-nice/', permanent: true },
-      { source: '/quartiers-lyon', destination: 'https://moverz.fr/quartiers-lyon/', permanent: true },
-      { source: '/quartiers-marseille', destination: 'https://moverz.fr/quartiers-marseille/', permanent: true },
-      { source: '/quartiers-toulouse', destination: 'https://moverz.fr/quartiers-toulouse/', permanent: true },
-      { source: '/quartiers-bordeaux', destination: 'https://moverz.fr/quartiers-bordeaux/', permanent: true },
-      { source: '/quartiers-lille', destination: 'https://moverz.fr/quartiers-lille/', permanent: true },
-      { source: '/quartiers-strasbourg', destination: 'https://moverz.fr/quartiers-strasbourg/', permanent: true },
-      { source: '/quartiers-nantes', destination: 'https://moverz.fr/quartiers-nantes/', permanent: true },
-      { source: '/quartiers-rennes', destination: 'https://moverz.fr/quartiers-rennes/', permanent: true },
-      { source: '/quartiers-rouen', destination: 'https://moverz.fr/quartiers-rouen/', permanent: true },
-      { source: '/quartiers-montpellier', destination: 'https://moverz.fr/quartiers-montpellier/', permanent: true },
+      { source: '/quartiers-nice', destination: 'https://moverz.fr/demenagement/nice/', permanent: true },
+      { source: '/quartiers-lyon', destination: 'https://moverz.fr/demenagement/lyon/', permanent: true },
+      { source: '/quartiers-marseille', destination: 'https://moverz.fr/demenagement/marseille/', permanent: true },
+      { source: '/quartiers-toulouse', destination: 'https://moverz.fr/demenagement/toulouse/', permanent: true },
+      { source: '/quartiers-bordeaux', destination: 'https://moverz.fr/demenagement/bordeaux/', permanent: true },
+      { source: '/quartiers-lille', destination: 'https://moverz.fr/demenagement/lille/', permanent: true },
+      { source: '/quartiers-strasbourg', destination: 'https://moverz.fr/demenagement/strasbourg/', permanent: true },
+      { source: '/quartiers-nantes', destination: 'https://moverz.fr/demenagement/nantes/', permanent: true },
+      { source: '/quartiers-rennes', destination: 'https://moverz.fr/demenagement/rennes/', permanent: true },
+      { source: '/quartiers-rouen', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
+      { source: '/quartiers-montpellier', destination: 'https://moverz.fr/demenagement/montpellier/', permanent: true },
       // Quartiers rouen (6 pages)
       { source: '/rouen/', destination: 'https://moverz.fr/rouen/', permanent: true },
       { source: '/rouen/centre-ville/', destination: 'https://moverz.fr/rouen/centre-ville/', permanent: true },
@@ -178,7 +178,7 @@ const nextConfig = {
       { source: '/rouen/saint-marc/', destination: 'https://moverz.fr/rouen/saint-marc/', permanent: true },
       { source: '/rouen/saint-sever/', destination: 'https://moverz.fr/rouen/saint-sever/', permanent: true },
       // Hub quartiers rouen
-      { source: '/quartiers-rouen/', destination: 'https://moverz.fr/quartiers-rouen/', permanent: true },
+      { source: '/quartiers-rouen/', destination: 'https://moverz.fr/demenagement/rouen/', permanent: true },
       // Corridors depuis rouen (6 pages)
       { source: '/rouen-vers-espagne/', destination: 'https://moverz.fr/rouen-vers-espagne/', permanent: true },
       { source: '/rouen-vers-lyon/', destination: 'https://moverz.fr/rouen-vers-lyon/', permanent: true },
